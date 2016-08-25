@@ -1,1 +1,1 @@
-# Grails2_4_2_CollectionsBeanIssue
+# Grails2_4_2_BeanIssue
