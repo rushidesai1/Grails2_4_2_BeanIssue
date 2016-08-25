@@ -16,7 +16,7 @@ class SpringBeansSpec extends Specification {
         expect: 'test TestObject beans are not the same instance'
         !testObject1.is(testObject2)
 
-        and: 'the TestObject beans share values defined in the bean definition'
-        testObject1.mapIssue1.is(testObject2.mapIssue1)
+        and: 'the TestObject beans do not share values injected in to the bean'
+        !testObject1.mapIssue1.is(testObject2.mapIssue1)
     }
 }
